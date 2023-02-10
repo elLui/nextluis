@@ -7,24 +7,27 @@
  *    - css
  *
  *
- *
+ *-
  */
 
 class Colors {
     
     
     /**
-     * constructor method is a special method that is called when an instance of
-     * the class is created - it is used to initialize the instance with the provided
-     * parameters
+     * Constructs a color object with the given name and hexadecimal value.
+     * @param {string} name - The name of the color.
+     * @param {string} [hex='#000000'] - The hexadecimal value of the color.
      */
-    constructor( name, hex, css ) {
+    constructor( name, hex="#000000" ) {
         this.name = name;
         this.hex = hex;
     }
     
     /**
-     * the following methods are used to return the values of the properties
+     * the following methods return the values of the properties
+     * @returns {string} The name of the color
+     * @returns {string} The hexadecimal value of the color
+     * @returns {string} The css variable name of the color
      */
     getName() {
         return this.name;
@@ -34,10 +37,16 @@ class Colors {
         return this.hex;
     }
     
+    getCss() {
+        return `var(--${ name })`;
+    }
+    
     
     
     /**
      * the following methods are used to set the values of the properties
+     * @param {string} name - name of the color
+     * @param {string} hex - hexadecimal value of the color
      */
     setName( name ) {
         this.name = name;
@@ -47,19 +56,6 @@ class Colors {
         this.hex = hex;
     }
     
-    
-    /**
-     * the following methods are used to calculate the values of the properties
-     */
-    calcHex() {
-        // calculate the hex value
-        
-    }
-    
-    css( name ) {
-        // calculate the css value
-        return `var(--${ name })`;
-    }
     
     /**
      * the following methods are used to output the values of the properties
