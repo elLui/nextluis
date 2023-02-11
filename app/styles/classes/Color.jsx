@@ -18,7 +18,7 @@ class Colors {
      * @param {string} name - The name of the color.
      * @param {string} [hex='#000000'] - The hexadecimal value of the color.
      */
-    constructor( name, hex="#000000" ) {
+    constructor( name, hex = "#000000" ) {
         this.name = name;
         this.hex = hex;
     }
@@ -63,17 +63,17 @@ class Colors {
      * *NOTE* - output methods are usually used for debugging purposes
      * *        and should be deactivated before publishing
      */
-//    outputName() {
-//        console.log( this.name );
-//    }
-//
-//    outputHex() {
-//        console.log( this.hex );
-//    }
-//
-//    outputCss() {
-//        console.log( this.css( this.name ) );
-//    }
+    //    outputName() {
+    //        console.log( this.name );
+    //    }
+    //
+    //    outputHex() {
+    //        console.log( this.hex );
+    //    }
+    //
+    //    outputCss() {
+    //        console.log( this.css( this.name ) );
+    //    }
 }
 
 

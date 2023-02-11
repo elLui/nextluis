@@ -1,4 +1,4 @@
-import Image from "next/image";
+import About from "@/app/about/page";
 import { Inter } from "@next/font/google";
 import styles from "./page.module.css";
 
@@ -10,13 +10,11 @@ export default function Home() {
     return (
         
         <main>
-        
+            
             <h1>
-                hello,
-                
-            
+                <About/>
             </h1>
-            
+        
         </main>
     
     );
