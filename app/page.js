@@ -1,4 +1,3 @@
-import StyleVariables from "@/styles/variables";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "./page.module.css";
@@ -12,8 +11,12 @@ export default function Home() {
         
         <main>
         
-            <StyleVariables/>
-        
+            <h1>
+                hello,
+                
+            
+            </h1>
+            
         </main>
     
     );
